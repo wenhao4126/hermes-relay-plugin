@@ -1,0 +1,20 @@
+name: relay
+version: 0.6.0
+description: 原主控绑定、状态回执、门禁与受控空CLI创建工具
+provides_tools:
+  - relay_plugin_status
+  - relay_ack_event
+  - relay_watch_task
+  - relay_unwatch_task
+  - relay_dispatch_task
+  - relay_record_document
+  - relay_evaluate_task
+  - relay_adjudicate_task
+  - relay_create_agent
+  - relay_refresh_agent
+config_schema:
+  type: object
+  properties:
+    TYPESAFE_API_KEY:
+      type: secret
+      env: TYPESAFE_API_KEY
